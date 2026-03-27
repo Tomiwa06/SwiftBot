@@ -1,13 +1,13 @@
 import { ServiceItem, ServiceType } from './types';
 
 // Direct logo URL from SwiftBooks
-export const LOGO_URL = "/SWIFTBOOKS  logo.png";
+export const LOGO_URL = "/logo.png";
 
 // Placeholder for user avatar if needed
 export const USER_AVATAR = "https://picsum.photos/seed/user/200";
 
 // The Google Sheet ID provided by the user
-export const GOOGLE_SHEET_ID = "1FUIDENRfr5R3u-9yjcV7hqBsMsSXYyCckv64-Z3f89o";
+export const GOOGLE_SHEET_ID = "1153VEDHZf2YGpicJPgWs3-YXe720KVCV5orUXRe6TukM";
 
 export const SERVICES: ServiceItem[] = [
   {
@@ -37,7 +37,7 @@ export const SERVICES: ServiceItem[] = [
   {
     id: "tax-audit",
     title: ServiceType.TaxAuditSpecialist,
-    description: "Specialized defense and navigation strategies during tax authority examinations.",
+    description: "Specialised defence and navigation strategies during tax authority examinations.",
     icon: "🛡️"
   },
   {
