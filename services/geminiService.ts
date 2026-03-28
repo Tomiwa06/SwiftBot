@@ -87,7 +87,7 @@ Today's Date: ${dateString}
 `;
 
   chatSession = ai.chats.create({
-    model: "gemini-3-flash-preview",
+    model: "model: "gemini-2.0-flash",
     config: {
       systemInstruction: dynamicInstruction,
       tools: [{ functionDeclarations: [checkAvailabilityTool, bookAppointmentTool] }],
@@ -125,13 +125,13 @@ export const sendToolResponseToGemini = async (
 ): Promise<string> => {
     try {
         const resultResponse = await chat.sendMessage({
-            message: [{
-                functionResponse: {
-                    id: toolId,
-                    name: toolName,
-                    response: { result: result } 
-                }
-            }]
+            // CORRECT
+message: [{
+  functionResponse: {
+    name: toolName,
+    response: result
+  }
+}]
         });
         return resultResponse.text || "";
     } catch (error) {
