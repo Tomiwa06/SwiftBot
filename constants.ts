@@ -1,7 +1,7 @@
 import { ServiceItem, ServiceType } from './types';
 
 // Direct logo URL from SwiftBooks
-export const LOGO_URL = "/https://i.ibb.co/4nknCSx5/logo.png"; // after putting logo.png in your /public folder
+export const LOGO_URL = "https://i.ibb.co/4nknCSx5/logo.png";
 
 // Placeholder for user avatar if needed
 export const USER_AVATAR = "https://picsum.photos/seed/user/200";
