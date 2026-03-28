@@ -3,7 +3,10 @@ import type { FunctionDeclaration, Chat, GenerateContentResponse } from "@google
 import { SYSTEM_INSTRUCTION } from "../constants";
 
 // Initialize Gemini Client
-const apiKey = typeof process !== 'undefined' ? process.env.API_KEY : '';
+let apiKey = import.meta.env.VITE_GEMINI_API_KEY;
+if (!apiKey || apiKey === 'your_actual_api_key_here') {
+    apiKey = typeof process !== 'undefined' ? process.env.API_KEY : '';
+}
 const ai = new GoogleGenAI({ apiKey: apiKey });
 
 // Tool 1: Check Availability
