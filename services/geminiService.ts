@@ -87,7 +87,7 @@ Today's Date: ${dateString}
 `;
 
   chatSession = ai.chats.create({
-    model: "model: "gemini-2.0-flash",
+    model: "gemini-2.0-flash",
     config: {
       systemInstruction: dynamicInstruction,
       tools: [{ functionDeclarations: [checkAvailabilityTool, bookAppointmentTool] }],
