@@ -241,7 +241,7 @@ import { GOOGLE_SHEET_ID } from "../constants";
 */
 
 // PASTE YOUR WEB APP URL HERE
-const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwEo3JEi56WtAIf2WftNnJ1njXvpWgn4V6ljgNDyJxZ4uwpiM7CsuCrYQtLwnpDvXi_/exec"; 
+const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwkYXOQtdIMPRVxlnCMFQzqHalu8sZM940hiNk4Pu9a4odBUEx-1OCAlRtyhHQP9JfKGg/exec"; 
 
 // Function 1: Book Appointment
 export const saveBookingToSheet = async (booking: BookingDetails): Promise<string | null> => {
